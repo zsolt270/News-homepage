@@ -24,5 +24,6 @@ It is a solution to the [News homepage challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![Screenshot of the Desktop view]()
-![Screenshot of the Mobile view]()
+![Screenshot of the Desktop view](./Screenshots/News-homepage-desktop.png)
+![Screenshot of the Mobile view](./Screenshots/New-homepage-mobile.png)
+![Screenshot of the Mobile view](./Screenshots/New-homepage-mobile2.png)
