@@ -20,7 +20,7 @@ It is a solution to the [News homepage challenge on Frontend Mentor](https://www
 
 ### Links
 
-- [Live Site URL]()
+- [Live Site URL](https://zsolt270.github.io/News-homepage/)
 
 ### Screenshot
 
