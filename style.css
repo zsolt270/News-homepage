@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+	--white: hsl(36, 100%, 99%);
+	--button_background: hsl(5, 85%, 63%);
+	--orange: hsl(35, 77%, 62%);
+	--numbers: hsl(233, 8%, 79%);
+	--small_texts: hsl(236, 13%, 42%);
+	--titles: hsl(240, 100%, 5%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+body {
+	font-size: 15px;
+	padding: 15px;
+}
+img {
+	max-width: 100%;
+	width: 100%;
+}
+/* -------------------------------- */
+
+.header {
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+	justify-content: space-between;
+}
+.header nav {
+	opacity: 0;
+	z-index: -999;
+}
+.header .open {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 75vw;
+	background-color: white;
+	opacity: 1;
+	z-index: 999999999;
+}
+.header .open ul {
+	list-style: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.header .open ul li {
+	margin: 1rem;
+	color: var(--titles);
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+#button-close {
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	right: 1rem;
+	z-index: 99;
+	top: 1.8rem;
+	cursor: pointer;
+}
+
+/* -------------------------------- */
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin: 1.5rem 0;
+}
+/* -------------------------------- */
+
+.section-1 h1 {
+	margin: 1rem 0;
+	font-size: 40px;
+	color: var(--titles);
+	font-weight: 800;
+}
+.section-1 p {
+	margin: 0;
+	margin-bottom: 1rem;
+	line-height: 1.5rem;
+	color: var(--small_texts);
+}
+.section-1 button {
+	padding: 0.8rem 2.2rem;
+	background-color: var(--button_background);
+	color: var(--white);
+	font-family: inherit;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	border: none;
+}
+.section-1 button:hover {
+	cursor: pointer;
+	background-color: var(--titles);
+}
+/* -------------------------------- */
+
+.section-2 {
+	background-color: var(--titles);
+	padding: 1.5rem;
+	margin: 3.4rem 0;
+}
+.section-2 h2 {
+	color: var(--orange);
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+.topics {
+	padding: 2rem 0;
+	border-bottom: 1px solid var(--small_texts);
+}
+.topics h3 {
+	color: var(--white);
+	padding-bottom: 13px;
+}
+.topics p {
+	color: var(--small_texts);
+}
+.section-2 .topics:last-child {
+	border: none;
+}
+.topics h3:hover {
+	cursor: pointer;
+	color: var(--orange);
+}
+/* -------------------------------- */
+.down-section {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+.down-section-texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.8rem;
+}
+.down-section-texts h2 {
+	margin-bottom: 0.6rem;
+	color: var(--numbers);
+	opacity: 0.95;
+	font-size: 30px;
+}
+.down-section-texts h3 {
+	color: var(--titles);
+}
+.down-section-texts p {
+	color: var(--small_texts);
+}
+.pic_container {
+	max-width: 9rem;
+}
+/* -------------------------------- */
+
+@media screen and (min-width: 1024px) {
+	body {
+		max-width: 1000px;
+		margin: auto;
+	}
+	.header button {
+		display: none;
+	}
+	.header nav {
+		opacity: 1;
+		z-index: 10;
+	}
+	.header nav ul {
+		width: 40rem;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	.header nav ul li:hover {
+		cursor: pointer;
+		color: var(--orange);
+	}
+
+	.desktop-flex {
+		display: flex;
+		gap: 2rem;
+	}
+	.section-2 {
+		margin: 0;
+	}
+	.section-1 div img {
+		width: 100rem;
+		max-height: 20rem;
+		object-fit: fill;
+	}
+	.section-1-flex {
+		display: flex;
+		gap: 8rem;
+		margin-top: 2rem;
+	}
+	.section-1-flex h1 {
+		margin: 0;
+	}
+	.section-3 {
+		margin-top: 3rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.2rem;
+	}
+}
